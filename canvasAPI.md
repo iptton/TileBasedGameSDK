@@ -61,18 +61,12 @@
 - fillStyle     values: CSS color, or a CanvasGradient or CanvasPattern
 - strokeStyle   values: CSS color, or a CanvasGradient or CanvasPattern
 
-CanvasGradient
----
-
-- createLinearGradient(x0, y0, x1, y1)
-- createRadialGradient(x0, y0, r0, x1, y1, r1)
-- gradient.addColorStop(offset, color)
-
-CanvasPattern
----
-
-- createPattern(image, repetition) repetition: repeat,repeat-x,repeat-y,no-repeat
-- pattern.setTransform(transform)
+		CanvasGradient
+		  createLinearGradient(x0, y0, x1, y1)
+		  createRadialGradient(x0, y0, r0, x1, y1, r1)
+		CanvasPattern
+		  createPattern(image, repetition) repetition: repeat,repeat-x,repeat-y,no-repeat
+		  pattern.setTransform(transform)
 
 ### 绘制距形
 
@@ -85,21 +79,21 @@ CanvasPattern
 - fillText(text, x, y [, maxWidth ] )
 - strokeText(text, x, y [, maxWidth ] )
 
-	metrics = context.measureText(text)
-	//Returns a TextMetrics object with the metrics of the given text in the current font.
-	metrics.width
-	metrics.actualBoundingBoxLeft
-	metrics.actualBoundingBoxRight
-	metrics.fontBoundingBoxAscent
-	metrics.fontBoundingBoxDescent
-	metrics.actualBoundingBoxAscent
-	metrics.actualBoundingBoxDescent
-	metrics.emHeightAscent
-	metrics.emHeightDescent
-	metrics.hangingBaseline
-	metrics.alphabeticBaseline
-	metrics.ideographicBaseline
-	//Returns the measurement described below.
+		metrics = context.measureText(text)
+		//Returns a TextMetrics object with the metrics of the given text in the current font.
+		metrics.width
+		metrics.actualBoundingBoxLeft
+		metrics.actualBoundingBoxRight
+		metrics.fontBoundingBoxAscent
+		metrics.fontBoundingBoxDescent
+		metrics.actualBoundingBoxAscent
+		metrics.actualBoundingBoxDescent
+		metrics.emHeightAscent
+		metrics.emHeightDescent
+		metrics.hangingBaseline
+		metrics.alphabeticBaseline
+		metrics.ideographicBaseline
+		//Returns the measurement described below.
 
 ### 绘制路径
 
